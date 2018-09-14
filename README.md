@@ -1,2 +1,2 @@
-# vuepress-netlify-cms
-Example integration of VuePress with Netlify
+#Merlin Labs Spellbook
+The design system that powers Merlin Labs.
