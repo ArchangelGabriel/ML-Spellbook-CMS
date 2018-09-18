@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Netlify CMS + VuePress',
-  description: 'Netlify + VuePress',
+  title: 'Spellbook',
+  description: 'The design system that powers Merlin Labs.',
   themeConfig: {
     docsDir: 'docs',
     repo: 'richTheCreator/ML-Spellbook-CMS',
@@ -12,7 +12,7 @@ module.exports = {
     nav: [
       {
         text: 'Admin',
-        link: '/admin/#/',
+        link: '/admin/#/'
       }
     ]
   }
