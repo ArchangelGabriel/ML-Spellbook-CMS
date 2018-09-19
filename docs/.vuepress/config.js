@@ -1,10 +1,54 @@
 module.exports = {
-  head: [ ['script', {}, `
-       var _hmt = _hmt || [];
-       (function() {
-         console.log(document.getElementById('figma-url'));
-       })();
-   `]],
+  head: [
+   ['script', {src: 'https://unpkg.com/axios/dist/axios.min.js'}],
+    ['script', {}, `
+       (function(window, document, undefined){
+
+       // code that should be taken care of right away
+
+       window.onload = init;
+
+         function init(){
+           var figmaFrameURL = document.getElementById('figma-url').innerHTML;
+           const api = 'https://api.figma.com/v1/';
+           const fileKey = figmaFrameURL.split('/')[4]
+           const nodeIds = figmaFrameURL.substring( figmaFrameURL.indexOf('=') + 1 );
+           let url = api + 'files/' + fileKey + '/nodes?ids=' + nodeIds;
+
+           const nodeOptions = {
+             method: 'GET',
+             headers: { 'X-Figma-Token': '2095-564411cc-dcd8-4c8e-80ca-47bbca812f9c' },
+             url,
+           };
+
+
+           axios(nodeOptions)
+             .then((data) => {
+               const src = data.data.nodes;
+               const nodes = Object.keys(src).map(k => src[k]);
+               const compObjs = nodes[0].components;
+               const compIDs = Object.keys(compObjs).map(k => k);
+
+               url = api + 'images/' + fileKey + '?ids=' + compIDs[0];
+               const imgOptions = {
+                 method: 'GET',
+                 headers: { 'X-Figma-Token': '2095-564411cc-dcd8-4c8e-80ca-47bbca812f9c' },
+                 url,
+               };
+               return axios(imgOptions)
+             })
+             .then((data) => {
+               const src = data.data.images;
+               const imageUrl = Object.keys(src).map(k => src[k])[0].toString()
+
+               console.log('imagessss', imageUrl)
+             })
+
+         }
+
+       })(window, document, undefined);
+   `]
+ ],
   configureWebpack: (config, isServer) => {
     console.log('webpack_config', config)
   },

@@ -35,7 +35,7 @@ CMS.registerEditorComponent({
         // Function to create a text block from an instance of this component
         toBlock: function(obj) {
 
-          return `<div id='figma-url'>${obj.id} </div>`
+          return `<img class='figma-url' src='' title='${obj.id}'/>`
         },
         // Preview output for this component. Can either be a string or a React component
         // (component gives better render performance)
@@ -59,7 +59,7 @@ CMS.registerEditorComponent({
           //   console.log('calledddddd', obj.val)
           // }
           //
-          console.log(obj)
+          // console.log(obj)
           //
           // axios(nodeOptions)
           //   .then((data) => {
@@ -85,7 +85,7 @@ CMS.registerEditorComponent({
           //   })
 
 
-          return `<div id='figma-url'> ${obj.id} </div>`
+          return `<img class='figma-url' src='' title='${obj.id}'/>`
         }
       });
 
