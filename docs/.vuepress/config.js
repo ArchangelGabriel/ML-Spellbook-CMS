@@ -6,8 +6,23 @@ module.exports = {
     repo: 'richTheCreator/ML-Spellbook-CMS',
     sidebar: [
       '/',
-      '/welcome',
-      '/test'
+      {
+        title: 'Atoms',
+        collapsable: true,
+        children: ['/welcome']
+      },
+      {
+        title: 'Templates',
+        children: [ '/test' ]
+      },
+      {
+        title: 'Organisms',
+        children: [ /* ... */ ]
+      },
+      {
+        title: 'Molecules',
+        children: [ /* ... */ ]
+      }
     ],
     nav: [
       {

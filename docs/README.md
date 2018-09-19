@@ -10,6 +10,6 @@ features:
   details: Easily upload images to your repo with an uploader
 - title: Powerful Deployments
   details: Leverage the power of netlify and VuePress to deploy statically
-footer: MIT Licensed | Built with ☕️ & magic.
+footer: MIT Licensed | Built with ☕️ &  code.
 title: FRONT PAGE
 ---
