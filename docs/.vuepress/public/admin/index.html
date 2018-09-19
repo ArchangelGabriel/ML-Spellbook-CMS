@@ -17,79 +17,77 @@
 <script src="https://unpkg.com/netlify-cms@1.8.2/dist/cms.js"></script>
 <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 <script>
-  // CMS.registerEditorComponent({
-  //   // Internal id of the component
-  //   id: "figma",
-  //   // Visible label
-  //   label: "Figma Import",
-  //   // Fields the user need to fill out when adding an instance of the component
-  //   fields: [{name: 'id', label: 'Figma Frame Share URL', widget: 'string'}],
-  //   // Pattern to identify a block as being an instance of this component
-  //   pattern: /^figma (\S+)$/,
-  //   // Function to extract data elements from the regexp match
-  //   fromBlock: function(match) {
-  //     return {
-  //       id: match[1]
-  //     };
-  //   },
-  //   // Function to create a text block from an instance of this component
-  //   toBlock: function(obj) {
-  //
-  //     return 'figma ' + obj.id;
-  //   },
-  //   // Preview output for this component. Can either be a string or a React component
-  //   // (component gives better render performance)
-  //   toPreview: function(obj) {
-  //
-  //     obj.val = 'test'
-  //     const val = obj.id;
-  //     const api = 'https://api.figma.com/v1/';
-  //     const fileKey = val.split('/')[4]
-  //     const nodeIds = val.substring( val.indexOf('=') + 1 );
-  //     let url = api + 'files/' + fileKey + '/nodes?ids=' + nodeIds;
-  //
-  //     const nodeOptions = {
-  //       method: 'GET',
-  //       headers: { 'X-Figma-Token': '2095-564411cc-dcd8-4c8e-80ca-47bbca812f9c' },
-  //       url,
-  //     };
-  //
-  //     const updateFn = (val) => {
-  //       obj.val = val
-  //       console.log('calledddddd', obj.val)
-  //     }
-  //
-  //     console.log(obj.val)
-  //
-  //     axios(nodeOptions)
-  //       .then((data) => {
-  //         const src = data.data.nodes;
-  //         const nodes = Object.keys(src).map(k => src[k]);
-  //         const compObjs = nodes[0].components;
-  //         const compIDs = Object.keys(compObjs).map(k => k);
-  //
-  //         url = api + 'images/' + fileKey + '?ids=' + compIDs[0];
-  //         const imgOptions = {
-  //           method: 'GET',
-  //           headers: { 'X-Figma-Token': '2095-564411cc-dcd8-4c8e-80ca-47bbca812f9c' },
-  //           url,
-  //         };
-  //         console.log('img url',url)
-  //         return axios(imgOptions)
-  //       })
-  //       .then((data) => {
-  //         const src = data.data.images;
-  //         const imageUrl = Object.keys(src).map(k => src[k])[0].toString()
-  //
-  //         console.log('imagessss', imageUrl)
-  //       })
-  //
-  //
-  //     return (
-  //     `<h1> ${obj.val} </h1>`
-  //     );
-  //   }
-  // });
+CMS.registerEditorComponent({
+        // Internal id of the component
+        id: "figma",
+        // Visible label
+        label: "Figma Import",
+        // Fields the user need to fill out when adding an instance of the component
+        fields: [{name: 'id', label: 'Figma Frame Share URL', widget: 'string'}],
+        // Pattern to identify a block as being an instance of this component
+        pattern: /^figma (\S+)$/,
+        // Function to extract data elements from the regexp match
+        fromBlock: function(match) {
+          return {
+            id: match[1]
+          };
+        },
+        // Function to create a text block from an instance of this component
+        toBlock: function(obj) {
+
+          return `<div id='figma-url'>${obj.id} </div>`
+        },
+        // Preview output for this component. Can either be a string or a React component
+        // (component gives better render performance)
+        toPreview: function(obj) {
+
+          // obj.val = 'test'
+          // const val = obj.id;
+          // const api = 'https://api.figma.com/v1/';
+          // const fileKey = val.split('/')[4]
+          // const nodeIds = val.substring( val.indexOf('=') + 1 );
+          // let url = api + 'files/' + fileKey + '/nodes?ids=' + nodeIds;
+          //
+          // const nodeOptions = {
+          //   method: 'GET',
+          //   headers: { 'X-Figma-Token': '2095-564411cc-dcd8-4c8e-80ca-47bbca812f9c' },
+          //   url,
+          // };
+          //
+          // const updateFn = (val) => {
+          //   obj.val = val
+          //   console.log('calledddddd', obj.val)
+          // }
+          //
+          console.log(obj)
+          //
+          // axios(nodeOptions)
+          //   .then((data) => {
+          //     const src = data.data.nodes;
+          //     const nodes = Object.keys(src).map(k => src[k]);
+          //     const compObjs = nodes[0].components;
+          //     const compIDs = Object.keys(compObjs).map(k => k);
+          //
+          //     url = api + 'images/' + fileKey + '?ids=' + compIDs[0];
+          //     const imgOptions = {
+          //       method: 'GET',
+          //       headers: { 'X-Figma-Token': '2095-564411cc-dcd8-4c8e-80ca-47bbca812f9c' },
+          //       url,
+          //     };
+          //     console.log('img url',url)
+          //     return axios(imgOptions)
+          //   })
+          //   .then((data) => {
+          //     const src = data.data.images;
+          //     const imageUrl = Object.keys(src).map(k => src[k])[0].toString()
+          //
+          //     console.log('imagessss', imageUrl)
+          //   })
+
+
+          return `<div id='figma-url'> ${obj.id} </div>`
+        }
+      });
 
   // CMS.registerEditorComponent({
   //   // Internal id of the component
@@ -118,33 +116,33 @@
   //     );
   //   }
   // });
-  CMS.registerEditorComponent({
-  id: 'image_by_url',
-  label: 'Image by URL',
-  fields: [
-    {name: 'url', label: 'Image URL', widget: 'string'},
-    {name: 'alt', label: 'Alternative text', widget: 'string'}
-  ],
-  pattern: /^!\[(.*)\]\((.*)\)$/,
-  fromBlock: function(match) {
-    // Netlify CMS doesn't seem to execute this function
-    return {
-      image: match[2],
-      alt: match[1]
-    };
-  },
-  toBlock: function(obj) {
-    var url = obj.url || '';
-    var alt = obj.alt || '';
-    return '![' + alt + '](' + url + ')';
-  },
-  toPreview: function(obj) {
-    // Netlify CMS doesn't seem to execute this function
-    var url = obj.url || '';
-    var alt = obj.alt || '';
-    return '<img src="' + obj.url + '" alt="' + obj.alt + '" />';
-  }
-});
+  // CMS.registerEditorComponent({
+  // id: 'image_by_url',
+  // label: 'Image by URL',
+  // fields: [
+  //   {name: 'url', label: 'Image URL', widget: 'string'},
+  //   {name: 'alt', label: 'Alternative text', widget: 'string'}
+  // ],
+  // pattern: /^!\[(.*)\]\((.*)\)$/,
+  // fromBlock: function(match) {
+  //   // Netlify CMS doesn't seem to execute this function
+  //   return {
+  //     image: match[2],
+  //     alt: match[1]
+  //   };
+  // },
+  // toBlock: function(obj) {
+  //   var url = obj.url || '';
+  //   var alt = obj.alt || '';
+  //   return '![' + alt + '](' + url + ')';
+  // },
+  // toPreview: function(obj) {
+  //   // Netlify CMS doesn't seem to execute this function
+  //   var url = obj.url || '';
+  //   var alt = obj.alt || '';
+  //   return '<img src="' + obj.url + '" alt="' + obj.alt + '" />';
+  // }
+// });
 </script>
 </body>
 </html>
