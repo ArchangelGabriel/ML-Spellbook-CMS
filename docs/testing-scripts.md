@@ -1,6 +1,8 @@
 ---
 title: Testing Scripts
 ---
+![](/docs/.vuepress/dist/screen-shot-2018-09-24-at-3.36.01-pm.png)
+
 <img class='figma-url' src='' title='https://www.figma.com/file/wZnrdYYeeRkFnrnk1xgXsh/Component-Library?node-id=2999%3A1880'/>
 
 # New First Component
