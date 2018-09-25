@@ -28,3 +28,11 @@ Some text
 # Slider
 
 This is a slider component
+
+
+
+::: tip
+
+This is a tip
+
+:::
