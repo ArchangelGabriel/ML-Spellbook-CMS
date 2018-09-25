@@ -5,54 +5,75 @@ module.exports = {
     ((window, document, undefined) => {
     // code that should be taken care of right away
 
+      document.addEventListener('click', () => {
+        console.log('this', this.document.activeElement.className)
+        const className = this.document.activeElement.className;
+        const regex1 = new RegExp("(?=\S*['-])([a-zA-Z'-]+)")
+        const isSidebarLink = regex1.test(className);
+        if(isSidebarLink){
+          init();
+        }else {
+          console.log('no match')
+        }
+
+      })
+
       window.onload = init
 
       function init () {
-        let raw = document.getElementsByClassName('figma-url')
-        let elements = [].slice.call(raw);
 
-        console.log(elements)
-        elements.map((elem, i) => {
-          let figmaFrameURL = elem.title
-          console.log(figmaFrameURL)
-          const api = 'https://api.figma.com/v1/'
-          const fileKey = figmaFrameURL.split('/')[4]
-          const nodeIds = figmaFrameURL.substring(figmaFrameURL.indexOf('=') + 1)
-          let url = api + 'files/' + fileKey + '/nodes?ids=' + nodeIds
+        var start = Date.now();
 
-          const nodeOptions = {
-            method: 'GET',
-            headers: { 'X-Figma-Token': '2095-564411cc-dcd8-4c8e-80ca-47bbca812f9c' },
-            url
-          }
+        let fetchFigmaImage = () => {
+          let raw = document.getElementsByClassName('figma-url')
+          let elements = [].slice.call(raw)
 
-          axios(nodeOptions)
-          .then((data) => {
-            const src = data.data.nodes
-            const nodes = Object.keys(src).map(k => src[k])
+          elements.map((elem, i) => {
 
-            const compID = nodes[0].document.children[0].id;
-            console.log(compID)
+            elem.src = 'https://www.hawesandcurtis.co.uk/Assets/images/placeholders/placeholder-loading.gif'
+            let figmaFrameURL = elem.title
+            console.log(figmaFrameURL)
+            const api = 'https://api.figma.com/v1/'
+            const fileKey = figmaFrameURL.split('/')[4]
+            const nodeIds = figmaFrameURL.substring(figmaFrameURL.indexOf('=') + 1)
+            let url = api + 'files/' + fileKey + '/nodes?ids=' + nodeIds
 
-            url = api + 'images/' + fileKey + '?ids=' + compID
-            const imgOptions = {
+            const nodeOptions = {
               method: 'GET',
               headers: { 'X-Figma-Token': '2095-564411cc-dcd8-4c8e-80ca-47bbca812f9c' },
               url
             }
-            return axios(imgOptions)
+
+            axios(nodeOptions)
+            .then((data) => {
+              console.log('data', data)
+              var millis = Date.now() - start;
+              console.log('Seconds to fetch node', + Math.floor(millis/1000) + 's')
+              const src = data.data.nodes
+              const nodes = Object.keys(src).map(k => src[k])
+              const compID = nodes[0].document.children[0].id
+              url = api + 'images/' + fileKey + '?ids=' + compID
+
+              const imgOptions = {
+                method: 'GET',
+                headers: { 'X-Figma-Token': '2095-564411cc-dcd8-4c8e-80ca-47bbca812f9c' },
+                url
+              }
+              return axios(imgOptions)
+            })
+            .then((data) => {
+              const src = data.data.images
+              const imageUrl = Object.keys(src).map(k => src[k])[0].toString()
+              elem.src = imageUrl
+              var millis = Date.now() - start;
+              console.log('Seconds to fetch image', + Math.floor(millis/1000) + 's')
+
+            })
           })
-          .then((data) => {
-            const src = data.data.images
-            const imageUrl = Object.keys(src).map(k => src[k])[0].toString()
-            elem.src = imageUrl
-            console.log('imagessss', imageUrl)
-          })
-        })
+        }
+        fetchFigmaImage()
       }
     })(window, document, undefined)
-
-
    `]
   ],
   configureWebpack: (config, isServer) => {
@@ -64,15 +85,14 @@ module.exports = {
     docsDir: 'docs',
     repo: 'richTheCreator/ML-Spellbook-CMS',
     sidebar: [
-      '/',
+      'root/welcome',
       {
         title: 'Atoms',
-        collapsable: true,
-        children: ['/welcome']
+        children: ['atoms/testing-scripts']
       },
       {
         title: 'Templates',
-        children: [ '/test' ]
+        children: [ 'templates/test' ]
       },
       {
         title: 'Organisms',
@@ -91,7 +111,3 @@ module.exports = {
     ]
   }
 }
-
-// const compObjs = nodes[0].components
-// const compIDs = Object.keys(compObjs).map(k => k)
-// url = api + 'images/' + fileKey + '?ids=' + compIDs[0]
