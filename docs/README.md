@@ -2,7 +2,7 @@
 home: true
 heroImage: /images/spellbook.png
 actionText: View Docs →
-actionLink: /welcome
+actionLink: /root/welcome
 features:
 - title: Markdown Editing
   details: Netlify's CMS provides a flexible Markdown Editor
