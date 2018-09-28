@@ -85,7 +85,7 @@ module.exports = {
     docsDir: 'docs',
     repo: 'richTheCreator/ML-Spellbook-CMS',
     sidebar: [
-      'root/welcome',
+      'root/testing',
       {
         title: 'Atoms',
         // children: ['atoms/']
