@@ -88,19 +88,19 @@ module.exports = {
       'root/welcome',
       {
         title: 'Atoms',
-        children: ['atoms/testing-scripts']
+        // children: ['atoms/']
       },
       {
         title: 'Templates',
-        children: [ 'templates/test' ]
+        // children: [ 'templates/test' ]
       },
       {
         title: 'Organisms',
-        children: [ /* ... */ ]
+        // children: [ /* ... */ ]
       },
       {
         title: 'Molecules',
-        children: [ /* ... */ ]
+        // children: [ /* ... */ ]
       }
     ],
     nav: [
