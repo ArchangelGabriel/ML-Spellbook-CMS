@@ -1,3 +1,4 @@
 .idea
 node_modules
-*.md
+.md
+!docs/README.md
