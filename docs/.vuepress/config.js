@@ -1,6 +1,7 @@
 module.exports = {
   head: [
    ['script', {src: 'https://unpkg.com/axios/dist/axios.min.js'}],
+   ['script', {src: 'https://codegena.com/assets/js/async-iframe.js'}],
     ['script', {}, `
     ((window, document, undefined) => {
     // code that should be taken care of right away
