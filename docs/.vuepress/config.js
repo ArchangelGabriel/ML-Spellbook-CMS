@@ -2,6 +2,22 @@ module.exports = {
   head: [
    ['script', {src: 'https://unpkg.com/axios/dist/axios.min.js'}],
    ['script', {src: 'https://codegena.com/assets/js/async-iframe.js'}],
+   ['style', {}, `
+     .codegena_iframe{
+       position:relative;
+       padding-bottom:56.25%;
+       height:0;
+       overflow: hidden;
+       max-width:100%;
+     }
+     .codegena_iframe iframe{
+       position:absolute;
+       top:0;
+       left:0;
+       width:100%;
+       height:100%;
+     }
+   `],
     ['script', {}, `
     ((window, document, undefined) => {
     // code that should be taken care of right away
@@ -88,19 +104,19 @@ module.exports = {
     sidebar: [
       'root/testing',
       {
-        title: 'Atoms',
+        title: 'Atoms'
         // children: ['atoms/']
       },
       {
-        title: 'Templates',
+        title: 'Templates'
         // children: [ 'templates/test' ]
       },
       {
-        title: 'Organisms',
+        title: 'Organisms'
         // children: [ /* ... */ ]
       },
       {
-        title: 'Molecules',
+        title: 'Molecules'
         // children: [ /* ... */ ]
       }
     ],
@@ -110,5 +126,7 @@ module.exports = {
         link: '/admin/#/'
       }
     ]
-  }
+  },
+  plugins: ['back-to-top']
+
 }
