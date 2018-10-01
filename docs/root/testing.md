@@ -3,6 +3,8 @@ title: Testing
 ---
 > Updating
 
-  <vue-friendly-iframe :src="'https://www.pexels.com/search/tiger'"></vue-friendly-iframe>
 
-test
+
+
+
+<iframe width="100%" height="450px" src="https://www.pexels.com/search/tiger" frameborder="0" allowfullscreen></iframe>
