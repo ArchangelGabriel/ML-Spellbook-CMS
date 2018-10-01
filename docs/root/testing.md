@@ -3,4 +3,4 @@ title: Testing
 ---
 > Updating
 
-![](/images/screen-shot-2018-09-24-at-3.36.01-pm.png)
+  <vue-friendly-iframe :src="'https://www.pexels.com/search/tiger'"></vue-friendly-iframe>
