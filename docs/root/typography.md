@@ -169,20 +169,128 @@ html {
 ```
 
 <h2 class='display2'>You know, Doc, you left your equipment on all week</h2>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <h3 class='display3'>Actually, people call me Marty. </h3>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <h4 class='display4'>Lorraine. Not a word, not a word, not a word now. </h4>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <h5 class='display5'> Whoa, whoa, Biff, what's that? </h5>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <h6 class='display6'>Are those my clocks I hear? Marty. Marty.</h6>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <p class='ml-p'>You have this thing hooked up to the car? This is more serious than I thought. Apparently your mother is amorously infatuated with you instead of your father. Lorraine, have you ever, uh, been in a situation where you know you had to act a certain way but when you got there, you didn't know if you could go through with it?</p>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <p class="ml-body2">You have this thing hooked up to the car? This is more serious than I thought. Apparently your mother is amorously infatuated with you instead of your father. Lorraine, have you ever, uh, been in a situation where you know you had to act a certain way but when you got there, you didn't know if you could go through with it?</p>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <span class="ml-subtitle">
 Lorraine, have you ever
 </span>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <span class="ml-subtitle2">
 Lorraine, have you ever
 </span>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <p class='ml-button'> BUTTON </p>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <span class="ml-overline">Not a word, not a word</span>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
 <span class="ml-caption">
 You have this thing hooked up to the car? This is more serious than I thought.
 </span>
+
+```json
+  font-size: 6.584rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -1.5px;
+```
