@@ -100,6 +100,7 @@ module.exports = {
   description: 'The design system that powers Merlin Labs.',
   themeConfig: {
     docsDir: 'docs',
+    lastUpdated: true,
     repo: 'richTheCreator/ML-Spellbook-CMS',
     sidebar: [
       'root/testing',
@@ -125,8 +126,7 @@ module.exports = {
         text: 'Admin',
         link: '/admin/#/'
       }
-    ]
+    ],
   },
-  plugins: ['back-to-top']
 
 }
