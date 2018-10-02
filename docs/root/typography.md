@@ -27,6 +27,12 @@ html {
 Great Scott! 
 </h1>
 
+| Platform | Font Size | Font-Family | Line-height | Letter-Spacing | Font-Weight |
+|----------|-----------|-------------|-------------|----------------|-------------|
+| Mobile   | 6.5rem    | Georgia     | 1.4rem      | 1.5px          | 300         |
+| Desktop  |           |             |             |                |             |
+| CMS      |           |             |             |                |             |
+
 ```json
 font-size: 6.584rem;
 font-family: Georgia;
