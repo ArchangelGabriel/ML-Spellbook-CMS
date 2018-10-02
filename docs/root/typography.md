@@ -1,6 +1,19 @@
 ---
 title: Typography
 ---
+<script>
+function toggle(button)
+{
+    if(button.value=="OFF")
+    {
+        button.value="ON";
+    }
+    else
+    {
+        button.value="OFF";
+    }
+}
+</script>
 <style>
 html {
   font-size: 12px;
@@ -19,6 +32,7 @@ html {
   }
 }
 </style>
+<input type="button" value="OFF" id="button1" onclick="toggle(this)" />
 
 # Hierarchy
 ---
