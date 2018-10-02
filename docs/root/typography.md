@@ -34,5 +34,5 @@ Great Scott!
 </h1>
 
 ```json
-font-size: 6.584rem;font-family
+font-size: 6.584rem;font-family: Georgia;font-style: normal;font-weight: 300;line-height:7.5rem;letter-spacing: -1.5px;
 ```
