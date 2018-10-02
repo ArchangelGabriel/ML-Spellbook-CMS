@@ -3,11 +3,7 @@ title: Testing
 ---
 <img class='figma-url' src='' title='https://www.figma.com/file/wZnrdYYeeRkFnrnk1xgXsh/Component-Library?node-id=1764%3A11'/>
 
-
-
-\[[toc]]
-
-
+[[toc]]
 
 ![null](https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/81bc/05cb/56ea1e760930dcf122f3f1862dc30761)
 
