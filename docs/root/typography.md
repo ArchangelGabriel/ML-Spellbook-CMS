@@ -1,23 +1,9 @@
 ---
 title: Typography
 ---
-<script>
-function toggle(button)
-{
-    if(button.value=="OFF")
-    {
-        button.value="ON";
-    }
-    else
-    {
-        button.value="OFF";
-    }
-}
-</script>
 <style>
 html {
   font-size: 12px;
-  background-color: bisque;
 }
 .accent {
   color:blue;
@@ -32,14 +18,22 @@ html {
   }
 }
 </style>
-<input type="button" value="OFF" id="button1" onclick="toggle(this)" />
 
 # Hierarchy
 ---
 
+<div>
+<span>
 <h1 style="font-size: 6.584rem;font-family: Georgia;font-style: normal;font-weight: 300;line-height: 7.5rem;letter-spacing: -1.5px;"> 
 Display 1
 </h1>
+
+```json
+font-size:16px
+```
+
+</span>
+</div>
 
 | Platform | Font Size | Font-Family | Line-height | Letter-Spacing | Font-Weight |
 |----------|-----------|-------------|-------------|----------------|-------------|
