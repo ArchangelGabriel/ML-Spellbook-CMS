@@ -152,16 +152,16 @@ html {
 }
 
 </style>
-# Typography 
 
-[[toc]]
+# Typography
+
+\[[toc]]
 
 ## Type Scale
 
 Merlins typographic scale is an iteration of Material Designs scale. We're it's departed is in it's responsive design. The `REM` unit has been applied for `H1` to `H4` type elements. The font responds when scaled below `600px`.
 
----
-
+- - -
 
 <p class='display1'>Display 1</p>
 
@@ -184,6 +184,7 @@ Merlins typographic scale is an iteration of Material Designs scale. We're it's 
   line-height: 4.625rem;
   letter-spacing: -0.5px;
 ```
+
 <p class='display3'>Display 3 </p>
 
 ```json
@@ -193,6 +194,7 @@ Merlins typographic scale is an iteration of Material Designs scale. We're it's 
   font-weight: 400;
   line-height: 3.75rem;
 ```
+
 <p class='display4'>Display 4</p>
 
 ```json
@@ -203,6 +205,7 @@ Merlins typographic scale is an iteration of Material Designs scale. We're it's 
   line-height: 42px;
   letter-spacing: 0.25px;
 ```
+
 <p class='display5'>Display 5</p>
 
 ```json
@@ -212,6 +215,7 @@ Merlins typographic scale is an iteration of Material Designs scale. We're it's 
   line-height: 30px;
   font-size: 26.34px;
 ```
+
 <p class='display6'>Display 6</p>
 
 ```json
@@ -222,6 +226,7 @@ Merlins typographic scale is an iteration of Material Designs scale. We're it's 
   font-size: 21.95px;
   letter-spacing: 0.25px;;
 ```
+
 <p class='ml-p'>Body</p>
 
 ```json
@@ -232,6 +237,7 @@ Merlins typographic scale is an iteration of Material Designs scale. We're it's 
   font-size: 16.45px;
   letter-spacing: 0.5px;
 ```
+
 <p class="ml-body2">Body 2</p>
 
 ```json
@@ -242,6 +248,7 @@ Merlins typographic scale is an iteration of Material Designs scale. We're it's 
   font-size: 14.39px;
   letter-spacing: 0.25px;
 ```
+
 <span class="ml-subtitle">
 Subtitle 1
 </span>
@@ -254,6 +261,7 @@ Subtitle 1
   font-size: 16.45px;
   letter-spacing: 0.15px;
 ```
+
 <span class="ml-subtitle2">
 Subtitle 2
 </span>
@@ -267,6 +275,7 @@ Subtitle 2
   letter-spacing: 0.1px;
   display:block;
 ```
+
 <p class='ml-button'> BUTTON </p>
 
 ```json
@@ -293,6 +302,7 @@ Caption
   letter-spacing: 0.4px;
   display:block;
 ```
+
 <span class="ml-overline">Overline</span>
 
 ```json
@@ -306,3 +316,30 @@ Caption
   display:block;
 ```
 
+## Line Measure
+
+Reading a long line of type causes fatigue: the reader must move his head at the end of each line and search for the beginning of the next line. Too short a line breaks up words or phrases that are generally read as a unit. Which is why a length of  `45-75` characters is ideal.
+
+- - -
+
+### Without a Container
+
+Shown below the first lines measure is 77 characters, this is more of typical sentence structure. While the second line is pure characters and has a measure or 43 characters. The max width should not exceed `600px`.
+
+![Line_Measure](/images/screen-shot-2018-10-03-at-9.52.19-am.png)
+
+### With a container
+
+If the text is placed within a container, the text should occupy the `full width` of the container. Ideally the containers would be wide enough to conform to our defined measure length but at times this will not be possible. In those cases, just leave appropriate space for the padding to left and right.
+
+![Line-Measure-Container](/images/screen-shot-2018-10-03-at-9.57.24-am.png)
+
+### Mobile Measure
+
+In practice, retaining a comfortable font size as much as possible better preserves readability. The result will be a less-than-ideal measure but a more comfortable reading experience.A responsive structure won’t help if small text on a hand-held device encourages readers to pinch and zoom!
+
+### Recommended Widths
+
+Below is a few recommendations for how many columns the body text should take up at any breakpoint for either 16px or 18px body text size.
+
+![Line-Measure-Recommendations](/images/screen-shot-2018-10-03-at-9.58.57-am.png)
