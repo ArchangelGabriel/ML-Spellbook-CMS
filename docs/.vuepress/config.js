@@ -103,6 +103,7 @@ module.exports = {
     lastUpdated: true,
     repo: 'richTheCreator/ML-Spellbook-CMS',
     sidebar: [
+      'root/typography',
       'root/testing',
       {
         title: 'Atoms'
