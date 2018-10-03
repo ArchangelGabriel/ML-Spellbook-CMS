@@ -155,7 +155,11 @@ html {
 
 # Typography
 
+
+
 \[[toc]]
+
+
 
 ## Type Scale
 
