@@ -17,7 +17,7 @@ justify-content:center;
 
 The Merlin Labs responsive layout grid adapts to screen size and a set of determined breakpoints, ensuring consistency across layouts.
 
-[[ toc ]]
+[[toc]]
 
 ## Breakpoints
 
