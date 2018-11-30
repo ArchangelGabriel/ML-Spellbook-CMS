@@ -4,6 +4,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "docs/.vuepress/public/images/"
 public_folder: "images/"
+publish_mode: editorial_workflow
 collections:
   - name: "root" # Used in routes, e.g., /admin/collections/blog
     label: "Root" # Used in the UI

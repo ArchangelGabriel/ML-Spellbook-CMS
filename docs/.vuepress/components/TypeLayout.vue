@@ -14,7 +14,6 @@
         Second tab content
       </v-tab>
   </vue-tabs>
-
 </template>
 
 <script>
