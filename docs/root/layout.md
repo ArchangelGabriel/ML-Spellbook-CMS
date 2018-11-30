@@ -21,7 +21,7 @@ The Merlin Labs responsive layout grid adapts to screen size and a set of determ
 
 ## Breakpoints
 
-Layouts using 4-column, 8-column, and 12-column grids are available for use across different screens, devices, and orientations. The grid can also accommodate designs that would otherwise not fall on the predefined columns via fixed grids, read further on for more info on this.
+We apply a 4-column, 8-column, or 12-column grid based on context and screen size. The grid can also accommodate designs that would otherwise not fall on the predefined columns via fixed grids, read further on for more info on this.
 
 <div class='h-center'>
 
@@ -33,7 +33,25 @@ Layouts using 4-column, 8-column, and 12-column grids are available for use acro
 | LG         | 1281-1960px |    12 |   16px |    40px |
 | XL         |     1961px+ |    12 |   16px |    40px |
 
-<div>
+</div>
 
 ---
+## 8pt Grid
 
+To achieve layouts that are visually balanced, most measurements align to an `8px` grid, which aligns both spacing and the overall layout. 
+
+### Vertical Rhythm 
+
+This determines the amount of vertical margin or padding between elements. To keep a consistent rhythm we adjust our rhythm based on context and screen sizes.
+
+<div class='h-center'>
+
+| Window |       Range | Spacing(s) | Gutter | Margins |
+|--------|------------:|-----------:|-------:|--------:|
+| XS     |     0-600px |       32px |   16px |    16px |
+| SM     |   601-960px | 32px, 40px |   16px |    16px |
+| MD     |  961-1280px | 48px, 56px |   16px |    24px |
+| LG     | 1281-1960px |       80px |   16px |    40px |
+| XL     |     1961px+ |       80px |   16px |    40px |
+
+</div>
