@@ -7,7 +7,7 @@ The Merlin Labs responsive layout grid adapts to screen size and a set of determ
 
 [[ toc ]]
 
-## Columns, Gutters, & Margins
+## Breakpoints
 
 The Merlin Labs responsive layout grid adapts to screen size and a set of determined breakpoints, ensuring consistency across layouts.
 
