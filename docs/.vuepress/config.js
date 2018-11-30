@@ -104,23 +104,22 @@ module.exports = {
     repo: 'richTheCreator/ML-Spellbook-CMS',
     sidebar: [
       'root/typography',
-      'root/testing',
-      {
-        title: 'Atoms'
-        // children: ['atoms/']
-      },
-      {
-        title: 'Templates'
-        // children: [ 'templates/test' ]
-      },
-      {
-        title: 'Organisms'
-        // children: [ /* ... */ ]
-      },
-      {
-        title: 'Molecules'
-        // children: [ /* ... */ ]
-      }
+      // {
+      //   title: 'Atoms'
+      //   // children: ['atoms/']
+      // },
+      // {
+      //   title: 'Templates'
+      //   // children: [ 'templates/test' ]
+      // },
+      // {
+      //   title: 'Organisms'
+      //   // children: [ /* ... */ ]
+      // },
+      // {
+      //   title: 'Molecules'
+      //   // children: [ /* ... */ ]
+      // }
     ],
     nav: [
       {
