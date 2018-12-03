@@ -104,6 +104,7 @@ module.exports = {
     repo: 'richTheCreator/ML-Spellbook-CMS',
     sidebar: [
       'root/typography',
+      'root/layout',
       // {
       //   title: 'Atoms'
       //   // children: ['atoms/']
