@@ -28,7 +28,7 @@ We apply a 4-column, 8-column, or 12-column grid based on context and screen siz
 
 <div class='table-container'>
 
-| Breakpoint |        Size | Col # | Gutter | Margins | 
+| Window     |       Range | Col # | Gutter | Margins | 
 |------------|------------:|------:|-------:|--------:|
 | XS         |     0-600px |     4 |   16px |    16px |
 | SM         |   601-960px |     8 |   16px |    16px |
