@@ -5,10 +5,13 @@ title: Layout
 
 /* HELPERS */
 
-.h-center {
-display: flex;
-flex:1;
-justify-content:center;
+.table-container {
+overflow-x:scroll;
+}
+
+.table-container table {
+display:table;
+width:100%;
 }
 
 </style>
@@ -23,7 +26,7 @@ The Merlin Labs responsive layout grid adapts to screen size and a set of determ
 
 We apply a 4-column, 8-column, or 12-column grid based on context and screen size. The grid can also accommodate designs that would otherwise not fall on the predefined columns via fixed grids, read further on for more info on this.
 
-<div class='h-center'>
+<div class='table-container'>
 
 | Breakpoint |        Size | Col # | Gutter | Margins | 
 |------------|------------:|------:|-------:|--------:|
@@ -43,7 +46,7 @@ To achieve layouts that are visually balanced, most measurements align to an `8p
 
 This determines the amount of vertical margin or padding between elements. To keep a consistent rhythm we adjust our rhythm based on context and screen sizes.
 
-<div class='h-center'>
+<div class='table-container'>
 
 | Window |       Range | Spacing(s) |
 |--------|------------:|-----------:|
