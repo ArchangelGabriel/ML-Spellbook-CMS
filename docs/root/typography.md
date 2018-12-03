@@ -4,7 +4,6 @@ title: Typography
 <style>
 html {
   font-size: 12px;
-  background-color: bisque;
 }
 .accent {
   color:blue;
@@ -15,7 +14,6 @@ html {
 @media (min-width: 600px) {
   html {
     font-size: 16px;
-    background-color: white;
   }
 }
 
@@ -155,7 +153,7 @@ html {
 
 # Typography
 
-[[toc]]
+\[[toc]]
 
 ## Type Scale
 
