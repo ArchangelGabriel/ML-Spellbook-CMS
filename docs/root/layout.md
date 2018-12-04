@@ -3,8 +3,6 @@ title: Layout
 ---
 <style>
 
-/* HELPERS */
-
 .table-container {
 overflow-x:scroll;
 }
@@ -40,7 +38,7 @@ We apply a 4-column, 8-column, or 12-column grid based on context and screen siz
 
 ## 8pt Grid
 
-To achieve layouts that are visually balanced, most measurements align to an `8px` grid, which aligns both spacing and the overall layout. 
+To achieve layouts that are visually balanced, most measurements align to an `8px` grid, which aligns both spacing and the overall layout.
 
 ### Vertical Rhythm
 
@@ -48,7 +46,7 @@ This determines the amount of vertical margin or padding between elements. To ke
 
 #### Section Spacing
 
-This is the amount of margin or padding applied between sections of content. Not to be confused with vertical spacing within blocks of content. 
+This is the amount of margin or padding applied between sections of content. Not to be confused with vertical spacing within blocks of content.
 
 <div class='table-container'>
 
@@ -67,3 +65,5 @@ This is the amount of margin or padding applied between sections of content. Not
 1. Example of section spacing at LG or XL window sizes.
 2. Example of section spacing at SM or XS window sizes.
 
+
+<AccordionList/>
