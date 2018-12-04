@@ -20,7 +20,7 @@ width:100%;
 
 The Merlin Labs responsive layout grid adapts to screen size and a set of determined breakpoints, ensuring consistency across layouts.
 
-[[toc]]
+\[[toc]]
 
 ## Breakpoints
 
@@ -66,3 +66,7 @@ This is the amount of margin or padding applied between sections of content. Not
 
 1. Example of section spacing at LG or XL window sizes.
 2. Example of section spacing at SM or XS window sizes.
+
+
+
+<AccordionList/>
