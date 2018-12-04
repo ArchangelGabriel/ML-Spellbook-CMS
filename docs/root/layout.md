@@ -64,8 +64,3 @@ This is the amount of margin or padding applied between sections of content. Not
 
 1. Example of section spacing at LG or XL window sizes.
 2. Example of section spacing at SM or XS window sizes.
-
-
-<AccordionList/>
-
-<AccordionList/>
