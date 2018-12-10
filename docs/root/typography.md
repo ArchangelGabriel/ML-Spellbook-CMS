@@ -9,8 +9,6 @@ title: Typography
 
 Merlins typographic scale is an iteration of Material Designs scale. We're it's departed is in it's responsive design. The `REM` unit has been applied for `H1` to `H4` type elements. The font responds when scaled below `600px`.
 
-- - -
-
 <TypeList/>
 
 ## Line Measure
