@@ -11,6 +11,26 @@ Merlins typographic scale is an iteration of Material Designs scale. We're it's 
 
 <TypeList/>
 
+## Casing
+
+Below are few demonstrations on when to use the appropriate casing styles.
+
+### Headers
+
+::: tip
+Do use title casing.
+
+_"The Sunshine Kids Foundation"_
+:::
+
+::: tip
+Don't use sentence casing.
+
+_"The sunshine kids foundation"_
+:::
+
+Unsure how to convert, this helpful [convertor](https://titlecase.com/) for assistance
+
 ## Line Measure
 
 Reading a long line of type causes fatigue: the reader must move his head at the end of each line and search for the beginning of the next line. Too short a line breaks up words or phrases that are generally read as a unit. Which is why a length of  `45-75` characters is ideal.
