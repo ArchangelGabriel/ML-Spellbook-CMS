@@ -17,14 +17,14 @@ Below are few demonstrations on when to use the appropriate casing styles.
 
 ### Headers
 
-::: DO
-Use title casing.
+::: tip
+Do use title casing.
 
 _"The Sunshine Kids Foundation"_
 :::
 
-::: DON'T
-Use sentence casing.
+::: danger
+Don't use sentence casing.
 
 _"The sunshine kids foundation"_
 :::
