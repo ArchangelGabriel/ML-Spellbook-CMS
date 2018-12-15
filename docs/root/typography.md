@@ -17,19 +17,19 @@ Below are few demonstrations on when to use the appropriate casing styles.
 
 ### Headers
 
-::: tip
-Do use title casing.
+::: DO
+Use title casing.
 
 _"The Sunshine Kids Foundation"_
 :::
 
-::: danger
-Don't use sentence casing.
+::: DON'T
+Use sentence casing.
 
 _"The sunshine kids foundation"_
 :::
 
-Unsure how to convert, this helpful [convertor](https://titlecase.com/) for assistance
+Unsure how to convert? Use this helpful [convertor](https://titlecase.com/) for assistance.
 
 ## Line Measure
 
