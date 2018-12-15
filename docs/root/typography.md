@@ -23,7 +23,7 @@ Do use title casing.
 _"The Sunshine Kids Foundation"_
 :::
 
-::: tip
+::: danger
 Don't use sentence casing.
 
 _"The sunshine kids foundation"_
