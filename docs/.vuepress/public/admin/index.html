@@ -1,71 +1,88 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spellbook CMS</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
-<body>
-<!-- Include the script that builds the page and powers Netlify CMS -->
-<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-<script>
-CMS.registerEditorComponent({
-        // Internal id of the component
-        id: "figma",
-        // Visible label
-        label: "Figma Import",
-        // Fields the user need to fill out when adding an instance of the component
-        fields: [{name: 'id', label: 'Figma Frame Share URL', widget: 'string'}],
-        // Pattern to identify a block as being an instance of this component
-        pattern: /^figma (\S+)$/,
-        // Function to extract data elements from the regexp match
-        fromBlock: function(match) {
-          return {
-            id: match[1]
-          };
-        },
-        // Function to create a text block from an instance of this component
-        toBlock: function(obj) {
-          return `<img class='figma-url' src='' title='${obj.id}'/>`
-        },
-        // Preview output for this component. Can either be a string or a React component
-        // (component gives better render performance)
-        toPreview: function(obj) {
-          return `<img class='figma-url' src='' title='${obj.id}'/>`
-        }
-      });
+  <link rel="icon" href="/images/favicon.png">
 
-</script>
-<script>
-CMS.registerEditorComponent({
-  id: 'image_by_url',
-  label: 'Image by URL',
-  fields: [
-    {name: 'url', label: 'Image URL', widget: 'string'},
-    {name: 'alt', label: 'Alternative text', widget: 'string'}
-  ],
-  pattern: /^!\[(.*)\]\((.*)\)$/,
-  fromBlock: function(match) {
-    // Netlify CMS doesn't seem to execute this function
-    return {
-      image: match[2],
-      alt: match[1]
-    };
-  },
-  toBlock: function(obj) {
-    var url = obj.url || '';
-    var alt = obj.alt || '';
-    return '![' + alt + '](' + url + ')';
-  },
-  toPreview: function(obj) {
-    // Netlify CMS doesn't seem to execute this function
-    var url = obj.url || '';
-    var alt = obj.alt || '';
-    return '<img src="' + obj.url + '" alt="' + obj.alt + '" />';
-  }
-});
-</script>
+</head>
+
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <!-- <script>
+  // NETLIFY CMS INTEGRATION - Figma image generator
+    CMS.registerEditorComponent({
+      // Internal id of the component
+      id: "figma",
+      // Visible label
+      label: "Figma Import",
+      // Fields the user need to fill out when adding an instance of the component
+      fields: [{
+        name: 'id',
+        label: 'Figma Frame Share URL',
+        widget: 'string'
+      }],
+      // Pattern to identify a block as being an instance of this component
+      pattern: /^figma (\S+)$/,
+      // Function to extract data elements from the regexp match
+      fromBlock: function(match) {
+        return {
+          id: match[1]
+        };
+      },
+      // Function to create a text block from an instance of this component
+      toBlock: function(obj) {
+        return `<img class='figma-url' src='' title='${obj.id}'/>`
+      },
+      // Preview output for this component. Can either be a string or a React component
+      // (component gives better render performance)
+      toPreview: function(obj) {
+        return `<img class='figma-url' src='' title='${obj.id}'/>`
+      }
+    });
+  </script> -->
+  <script>
+    // NETLIFY CMS INTEGRATION - Image by url
+    CMS.registerEditorComponent({
+      id: 'image_by_url',
+      label: 'Image by URL',
+      fields: [{
+          name: 'url',
+          label: 'Image URL',
+          widget: 'string'
+        },
+        {
+          name: 'alt',
+          label: 'Alternative text',
+          widget: 'string'
+        }
+      ],
+      pattern: /^!\[(.*)\]\((.*)\)$/,
+      fromBlock: function(match) {
+        // Netlify CMS doesn't seem to execute this function
+        return {
+          image: match[2],
+          alt: match[1]
+        };
+      },
+      toBlock: function(obj) {
+        var url = obj.url || '';
+        var alt = obj.alt || '';
+        return '![' + alt + '](' + url + ')';
+      },
+      toPreview: function(obj) {
+        // Netlify CMS doesn't seem to execute this function
+        var url = obj.url || '';
+        var alt = obj.alt || '';
+        return '<img src="' + obj.url + '" alt="' + obj.alt + '" />';
+      }
+    });
+  </script>
 </body>
+
 </html>
