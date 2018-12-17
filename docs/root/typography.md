@@ -11,9 +11,11 @@ Merlins typographic scale is an iteration of Material Designs scale. We're it's 
 
 <TypeList/>
 
+<br/>
+
 ## Casing
 
-Below are few demonstrations on when to use the appropriate casing styles.
+Below are a few demonstrations on when to use the appropriate casing styles.
 
 ### Headers
 
