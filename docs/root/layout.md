@@ -34,6 +34,12 @@ We apply a 4-column, 8-column, or 12-column grid based on context and screen siz
 | LG     | 1281-1960px | 12    | 16px   | 40px    |
 | XL     | 1961px+     | 12    | 16px   | 40px    |
 
+### Max-Width Container
+
+The container provides a consistent amount of area for content and elements across pages. The current container value is **1280px**.
+
+![](/images/container.png)
+
 </div>
 
 ## 8pt Grid
@@ -48,18 +54,18 @@ This determines the amount of vertical margin or padding between elements. To ke
 
 This is the amount of margin or padding applied between sections of content. Not to be confused with vertical spacing within blocks of content. 
 
+* Base Values - Refer to any section that is on a primary background color.
+* \#FAFAFA Values - Refer to any section with a #FAFAFA background color.
+
 <div class='table-container'>
 
-| Window |       Range | On Base Values | On #FAFAFA Values |
-|--------|------------:|---------------:|------------------:|
-| XS     |     0-600px |           32px |              32px |
-| SM     |   601-960px |     32px, 40px |              56px |
-| MD     |  961-1280px |     48px, 56px |              56px |
-| LG     | 1281-1960px |           80px |              56px |
-| XL     |     1961px+ |           80px |              56px |
-
-* Base Values - Refer to any section that is on a primary background color.
-* #FAFAFA Values - Refer to any section with a #FAFAFA background color.
+| Window | Range       | On Base Values | On #FAFAFA Values |
+| ------ | ----------- | -------------- | ----------------- |
+| XS     | 0-600px     | 32px           | 32px              |
+| SM     | 601-960px   | 32px, 40px     | 56px              |
+| MD     | 961-1280px  | 48px, 56px     | 56px              |
+| LG     | 1281-1960px | 80px           | 56px              |
+| XL     | 1961px+     | 80px           | 56px              |
 
 </div>
 
