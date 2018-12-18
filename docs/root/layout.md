@@ -59,7 +59,8 @@ This is the amount of margin or padding applied between sections of content. Not
 | XL     |     1961px+ |           80px |              56px |
 
 * Base Values - Refer to any section that is on a primary background color.
-* #FAFAFA Values - Refer to any section with a secondary background color.
+* #FAFAFA Values - Refer to any section with a #FAFAFA background color.
+
 </div>
 
 ![](/images/layout-section-verticalspacing.jpg)
