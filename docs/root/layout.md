@@ -21,7 +21,6 @@ The Merlin Labs responsive layout grid adapts to screen size and a set of determ
 [[toc]]
 
 ## Breakpoints
-
 We apply a 4-column, 8-column, or 12-column grid based on context and screen size. The grid can also accommodate designs that would otherwise not fall on the predefined columns via fixed grids, read further on for more info on this.
 
 <div class='table-container'>
@@ -34,13 +33,13 @@ We apply a 4-column, 8-column, or 12-column grid based on context and screen siz
 | LG     | 1281-1960px | 12    | 16px   | 40px    |
 | XL     | 1961px+     | 12    | 16px   | 40px    |
 
-### Max-Width Container
+</div>
 
+### Max-Width Container
 The container provides a consistent amount of area for content and elements across pages. The current container value is **1280px**.
 
 ![](/images/container.png)
 
-</div>
 
 ## 8pt Grid
 
