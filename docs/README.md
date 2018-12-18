@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/Ill_spellbookV1.png
+heroImage: /images/Collab_Ill.png
 actionText: View Docs →
 actionLink: /root/typography
 features:
