@@ -50,13 +50,13 @@ This is the amount of margin or padding applied between sections of content. Not
 
 <div class='table-container'>
 
-| Window | Range       | Spacing(s) |
-| ------ | ----------- | ---------- |
-| XS     | 0-600px     | 32px       |
-| SM     | 601-960px   | 32px, 40px |
-| MD     | 961-1280px  | 48px, 56px |
-| LG     | 1281-1960px | 80px       |
-| XL     | 1961px+     | 80px       |
+| Window |       Range | On Base Values | On #FAFAFA Values |
+|--------|------------:|---------------:|------------------:|
+| XS     |     0-600px |           32px |              32px |
+| SM     |   601-960px |     32px, 40px |              56px |
+| MD     |  961-1280px |     48px, 56px |              56px |
+| LG     | 1281-1960px |           80px |              56px |
+| XL     |     1961px+ |           80px |              56px |
 
 </div>
 
