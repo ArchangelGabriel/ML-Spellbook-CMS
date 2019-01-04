@@ -55,8 +55,3 @@ If the text is placed within a container, the text should occupy the `full width
 
 In practice, retaining a comfortable font size as much as possible better preserves readability. The result will be a less-than-ideal measure but a more comfortable reading experience.A responsive structure won’t help if small text on a hand-held device encourages readers to pinch and zoom!
 
-### Recommended Widths
-
-Below is a few recommendations for how many columns the body text should take up at any breakpoint for either 16px or 18px body text size.
-
-![Line-Measure-Recommendations](/images/screen-shot-2018-10-03-at-9.58.57-am.png)
